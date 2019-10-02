@@ -22,7 +22,7 @@ a {
     width: 5%;
     height: 2px;
     background: #41281b;
-    bottom: 25px;
+    bottom: 9px;
 }
 .h5,
 h5 {
@@ -515,6 +515,7 @@ ul.navbar-nav.ml-auto.smooth-scroll.text-center {
     }
     .sectionTitle {
         padding: 0 0 25px 0;
+        position: relative;
     }
     div#navbarSupportedContent {
         width: 60vw;
