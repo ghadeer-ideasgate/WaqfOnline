@@ -270,7 +270,7 @@ figure.effect-oscar:hover img {
 }
 section#articles {
     background: url(../images/top_img_1.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 .class-name {
 	padding: 15px;
@@ -291,7 +291,10 @@ section#articles {
 }
 
 .footerlogo img {
-	max-width: 20%;
+	max-width: 25%;
+}
+.social {
+    margin: 10px;
 }
 section #footerSocial {
   text-align: center;
@@ -343,7 +346,11 @@ section #footerSocial li span {
   padding: 20px;
   max-width: 300px;
 }
-
+.address,
+.email,
+.phone{
+    padding:5px 0;
+}
 
 .phone {
     direction: ltr !important;
@@ -432,7 +439,6 @@ ul.navbar-nav.ml-auto.smooth-scroll.text-center {
         width: 242px;
         top: 36px;
         left: 60px;
-        border: 10px solid #399200;
     }
     figure.effect-oscar figcaption {
         padding: 1em;
@@ -462,10 +468,6 @@ ul.navbar-nav.ml-auto.smooth-scroll.text-center {
         background: url('../images/top_img.png') no-repeat;
         background-position: top center;
     }
-    /* #navigation {
-	background: url(../images/top_img.png) no-repeat;
-	background-position: 50% 387%;
-} */
 }
 
 @media screen and (min-width: 426px) and (max-width: 480px) {
@@ -485,10 +487,13 @@ ul.navbar-nav.ml-auto.smooth-scroll.text-center {
         left: 15px;
         top: 28px;
     }
+    .navbar-brand{
+        margin-left: 0;
+    }
     .navbar-brand img {
-        width: 171px;
-        padding: 10px;
+        width: 183px;
         padding-bottom: 0;
+        margin-bottom: 14px;
     }
     section#navigation {
         position: relative;
@@ -501,10 +506,10 @@ ul.navbar-nav.ml-auto.smooth-scroll.text-center {
         padding: 0.25rem 0.5rem;
     }
     .footerlogo img {
-        max-width: 40%;
+        max-width: 50%;
     }
     .imgborder {
-        width: 85%;
+        width: 65%;
         height: 100%;
         top: 30px;
     }
@@ -513,7 +518,6 @@ ul.navbar-nav.ml-auto.smooth-scroll.text-center {
     }
     div#navbarSupportedContent {
         width: 60vw;
-        /* height: 70vh; */
     }
     .navbar {
         justify-content: center !important;
@@ -521,5 +525,16 @@ ul.navbar-nav.ml-auto.smooth-scroll.text-center {
     .grid {
         position: relative;
         margin: 20px auto;
+    }
+    ul#footerSocial {
+        padding: 0;
+    }
+}
+@media screen and (min-width:220px) and (max-width:424px){
+    .imgborder {
+        width: 90%;
+        height: 100%;
+        top: 30px;
+        left: 40px;
     }
 }
