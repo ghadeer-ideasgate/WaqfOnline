@@ -530,6 +530,9 @@ ul.navbar-nav.ml-auto.smooth-scroll.text-center {
     ul#footerSocial {
         padding: 0;
     }
+    .sectionTitle:after{
+        display:none;
+    }
 }
 @media screen and (min-width:220px) and (max-width:424px){
     .imgborder {
@@ -537,5 +540,8 @@ ul.navbar-nav.ml-auto.smooth-scroll.text-center {
         height: 100%;
         top: 30px;
         left: 40px;
+    }
+    .sectionTitle:after{
+        display:none;
     }
 }
