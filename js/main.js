@@ -32,6 +32,6 @@ let countdiv = document.querySelector('#value');
   count++;
   console.log(count);
  //countdiv[0].textContent = `${count}`;
- countdiv[0].textContent = `${count}`;
+ countdiv.textContent = `${count}`;
 
  }
