@@ -22,8 +22,16 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-//   document.body.scrollTop = 0; // For Safari
-//   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-// }
+//increase views on click
+
+let count=0;
+//let countdiv = document.querySelectorAll('.value');
+let countdiv = document.querySelector('#value');
+
+ function countUpdate() {
+  count++;
+  console.log(count);
+ //countdiv[0].textContent = `${count}`;
+ countdiv[0].textContent = `${count}`;
+
+ }
