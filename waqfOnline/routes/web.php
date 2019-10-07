@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'CategoryController@index')->name('categories.index');
 
-// Route::get('/')
+Route::get('category/{category}', 'ArticleController@get_category_aricles')->name('category.articles')->where('category', '[0-4]');

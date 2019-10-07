@@ -14,7 +14,12 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories=Category::all();
+        $most_viewed_articles=ArticleController::get_most_viewed();
+        return view('home',[
+            'categories' => $categories,
+            'most_viewed_articles' => $most_viewed_articles
+        ]);
     }
 
     /**

@@ -22,6 +22,7 @@ class CreateArticlesTable extends Migration
             $table->string('doctor');
             $table->text('description');
             $table->string('url');
+            $table->integer('no_of_views');
             $table->timestamps();
         });
     }

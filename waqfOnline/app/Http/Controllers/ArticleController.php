@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use Illuminate\Http\Request;
+use App\Category;
 
 class ArticleController extends Controller
 {
@@ -46,7 +47,7 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        //
+        
     }
 
     /**
@@ -82,4 +83,24 @@ class ArticleController extends Controller
     {
         //
     }
+
+    public function get_category_aricles($category)
+    {
+        $category_exist = Category::find($category);
+        if($category_exist)
+        {
+            $articles=$category_exist->articles()->paginate(9);
+            return view('category',[
+                'category_name'=>$category_exist->name,
+                'articles'=>$articles
+            ]);
+        }
+    }
+
+    public static function get_most_viewed()
+    {
+        $most_viewed=Article::orderBy('no_of_views', 'desc')->limit(3)->get();
+        return $most_viewed;
+    }
+
 }
