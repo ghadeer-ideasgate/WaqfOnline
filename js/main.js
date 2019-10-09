@@ -1,4 +1,14 @@
-// smooth scrol
+$(document).ready(function() {
+  //Preloader
+  $(window).on("load", function() {
+  preloaderFadeOutTime = 500;
+  function hidePreloader() {
+  var preloader = $('.spinner-wrapper');
+  preloader.fadeOut(preloaderFadeOutTime);
+  }
+  hidePreloader();
+  });
+  // smooth scrol
 $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
@@ -8,6 +18,8 @@ $('a[href^="#"]').on('click', function(event) {
         }, 1000);
     }
 });
+  });
+
 
 mybutton = document.getElementById("myBtn");
 
@@ -35,3 +47,4 @@ let countdiv = document.querySelector('#value');
  countdiv[0].textContent = `${count}`;
 
  }
+ 
