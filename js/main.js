@@ -44,7 +44,10 @@ let countdiv = document.querySelector('#value');
   count++;
   console.log(count);
  //countdiv[0].textContent = `${count}`;
- countdiv[0].textContent = `${count}`;
+ countdiv.textContent = `${count}`;
 
  }
+<<<<<<< HEAD
  
+=======
+>>>>>>> 84acd4fbee6eb00d589dda9b7757384f16dcb2fc
